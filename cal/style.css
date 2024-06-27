@@ -1,0 +1,21 @@
+
+*{
+    margin: 0 ;
+    padding: 0;
+}
+#form{
+    width: 350px;
+    height: 370px;
+}
+.button{
+    background-color: black;
+    width: 74px;
+    height: 65px;
+    color: aliceblue;
+    border-radius: 15px;
+    margin: 1px;
+}
+
+#screen{
+    text-align: right;
+}

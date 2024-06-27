@@ -1,0 +1,47 @@
+let title=products.Title
+      console.log(title);
+
+      let release=products.Released
+      console.log(release);
+
+      let director=products.Director
+      console.log(director);
+
+      let writer=products.Writer
+      console.log(writer);
+
+      let actors=products.Actors
+      console.log(actors);
+
+      let awards=products.Awards
+      console.log(awards);
+
+      let poster=products.Poster
+      console.log(poster);
+
+      
+      let ratings=products.Ratings[0]
+      console.log(ratings);
+
+
+      res.innerHTML+=`<div class="row g-0 " >
+        <div class="col-md-4 ">
+          <img src="${poster}"img-fluid rounded-start m-2" style="width: 100%; height: 300px;" alt="...">
+        </div>
+        <div class="col-md-8">
+          <div class="card-body">
+              <div class="card" style="width: 18rem;">
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Title : ${title}</li>
+                    <li class="list-group-item">Release : ${release}</li>
+                    <li class="list-group-item"> Director: ${director}</li>
+                    <li class="list-group-item">Writer : ${writer}</li>
+                    <li class="list-group-item">Actors : ${actors}</li>
+                    <li class="list-group-item">Awards : ${awards}</li>
+                  </ul>
+                  
+                </div>
+
+          </div>
+        </div>
+      </div>

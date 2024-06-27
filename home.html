@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+ <header style="background-image: url('https://i.pinimg.com/originals/8e/46/15/8e46150f790fbefe438d9c2767c32ad1.gif') ; width: 100%; height: 400px;">
+    <nav class="navbar bg-body-transparent">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+           <span class="text-white"><i class="fa-solid fa-house fa-2x"></i> </span>
+            <span style="font-size: 30px; color: aliceblue;">Landing Page</span>
+          </a>
+          <button class="btn btn-outlin border light text-white" onclick="log()"><span class="m-1"><i class="fa-solid fa-power-off"></i> </span>Logout</button>
+        </div>
+      </nav>
+    </header>
+<div class="row ">
+    <h2 class="text-center mt-2">Welcome  <span style="color: blue;" id="home">User</span> </h2>
+    <p class="mt-3 text-align-justify">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Id cum laborum, rem iusto voluptas blanditiis ex maxime dicta ducimus debitis sint cupiditate repellat a dolor veniam facere quidem aliquid labore?Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam distinctio cumque aliquam alias dolor, eum quidem blanditiis magni officiis sit est reprehenderit, corporis, facilis porro fuga eos velit! Est, modi.</p>
+</div>
+</body>
+<script>
+
+ let user= localStorage.getItem('username')
+ home.innerHTML= user
+
+
+   function log(){
+    localStorage.removeItem('username')
+    window.location='landingpage.html'
+  }
+</script>
+
+
+
+
+
+</html>

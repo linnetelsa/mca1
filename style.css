@@ -1,0 +1,15 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+#form{
+    width: 500px;
+    height: 470px;
+    background-image: linear-gradient(to right,rgb(44, 44, 141),rgb(126, 112, 112));
+}
+#input{
+    margin: 50px;
+    border-radius: 50px;
+    padding: 10px;
+    border: transparent;
+}

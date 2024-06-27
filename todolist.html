@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+
+</head>
+<body>
+
+ <div class="row w-100">
+    <div class="col-md-4"></div>
+    <div class="col-md-4">
+        <h1 class="text-center mt-5 text-primary">TO DO LIST</h1>
+        <form class="shadow border p-3 mt-3">
+            <div class="d-flex">
+            <input id="result" type="text" placeholder="Enter the value" class="form-control">
+            <button type="button" class="btn btn-success ms-2" onclick="add()">Add</button>
+        </form>
+       </div>
+       <ul id="act">
+        
+
+
+       </ul>
+
+    </div>
+    <div class="col-md-4"></div>
+ </div>
+    
+</body>
+<script>
+    function add(){
+        if(result.value){
+            act.innerHTML +=`<li>${result.value}</li>`
+        }
+        else{
+            alert('please enter a value');
+        }
+
+    }
+
+</script>
+</html>
